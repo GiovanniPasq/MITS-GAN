@@ -12,3 +12,6 @@ This is the implementation of our submitted Artificial Intelligence in Medicine 
 ```
 ### Coming soon
 Models and code will be publicly available after the paper publication.
+
+## MITS-GAN Architecture
+<center><img src='MITS-GAN.png' width=100%/></center>
