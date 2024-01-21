@@ -16,6 +16,17 @@ Models and code will be publicly available after the paper publication.
 ## MITS-GAN Architecture
 <center><img src='MITS-GAN.png' width=100%/></center>
 
+## Installation
+
+### Google Colab
+Quickstart here 👉 [![Open In Colab]()<br>
+Or load and run the ```MITS-GAN.ipynb``` on Google Colab following the instructions inside the notebook.<br>
+
+## Dataset
+
+## Training
+
+## Testing
 
 ## Results
 Qualitative results on the reconstruction task compared with images as manipulation targets.
