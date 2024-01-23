@@ -17,10 +17,15 @@ Models and code will be publicly available after the paper publication.
 <center><img src='MITS-GAN.png' width=100%/></center>
 
 ## Installation
-
+Choose one of the two installation options:
 ### Google Colab
 Quickstart here 👉 [![Open In Colab]()<br>
-Or load and run the ```MITS-GAN.ipynb``` on Google Colab following the instructions inside the notebook.<br>
+
+### Installation on your PC
+Install the required dependencies by running the following command in your terminal:
+```
+pip install --upgrade scipy matplotlib pandas tensorflow keras SimpleITK pydicom torch
+```
 
 ## Dataset
 Dataset is available [here](https://github.com/ymirsky/CT-GAN#Datasets)
