@@ -31,7 +31,6 @@ Dataset is available [here](https://github.com/ymirsky/CT-GAN#Datasets)
 
 ## Training
 Create a new folder Named MITS-GAN and put inside the following files/folders:<br>
-
 ```
 MITS-GAN
 |
@@ -46,9 +45,14 @@ MITS-GAN
 |
 └───models/
 |     └───INJ
-|     |    └───G_model_inj.h5      
+|     |    └───G_model_inj.h5
+|     |    └───normalization.npy
+|     |    └───equalization.pkl
+|     |  
 │     └───REM
 │          └───G_model_rem.h5
+|          └───normalization.npy
+|          └───equalization.pkl
 |
 └───procedures/
 │     └───attack_pipeline.py
