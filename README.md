@@ -1,7 +1,6 @@
 # MITS-GAN
-This is the implementation of our submitted Computers in Biology and Medicine 2024 work 'MITS-GAN: Safeguarding Medical Imaging from Tampering with Generative Adversarial Networks'. This study introduces MITS-GAN, a novel approach to prevent tampering in medical images, with a specific focus on CT scans. The approach disrupts the output of the attacker's [CT-GAN](https://github.com/ymirsky/CT-GAN) architecture by introducing imperceptible but yet precise perturbations. The original paper can be found [here](https://arxiv.org/pdf/2401.09624.pdf). <br>
+This is the implementation of our Computers in Biology and Medicine 2024 work 'MITS-GAN: Safeguarding Medical Imaging from Tampering with Generative Adversarial Networks'. This study introduces MITS-GAN, a novel approach to prevent tampering in medical images, with a specific focus on CT scans. The approach disrupts the output of the attacker's [CT-GAN](https://github.com/ymirsky/CT-GAN) architecture by introducing imperceptible but yet precise perturbations. The original paper can be found [here](https://arxiv.org/pdf/2401.09624.pdf). <br>
 Please leave a star ⭐ and cite the following [paper](https://arxiv.org/pdf/2401.09624.pdf) if you use this repository for your project.<br>
-Models and code will be publicly available after the paper publication.
 ```
 @misc{pasqualino2024mitsgan,
       title={MITS-GAN: Safeguarding Medical Imaging from Tampering with Generative Adversarial Networks}, 
@@ -31,8 +30,48 @@ pip install --upgrade scipy matplotlib pandas tensorflow keras SimpleITK pydicom
 Dataset is available [here](https://github.com/ymirsky/CT-GAN#Datasets)
 
 ## Training
+Create a new folder Named MITS-GAN and put inside the following files/folders:<br>
+
+```
+MITS-GAN
+|
+└───data/
+│    └───ct_scan_1.raw
+│    └───ct_scan_1.mhd
+│    │        
+│    |       ...
+|    |
+│    └───ct_scan_n.raw
+│    └───ct_scan_n.mhd
+|
+└───models/
+|     └───INJ
+|     |    └───G_model_inj.h5      
+│     └───REM
+│          └───G_model_rem.h5
+|
+└───procedures/
+│     └───attack_pipeline.py
+|
+└───utils/
+|     └───dataloader.py
+|     └───dicom_utils.py
+|     └───equalizer.py
+|     └───utils.py
+|
+│- config.py
+│- discriminator.py
+|- generator.py
+|- scanDataset.py
+|- train.py
+```
+Download the dataset and the pretrained model from the CT-GAN repo by contacting the authors and place them respectively inside the data and model folders. Run the following training script:
+```
+python3 MITS-GAN/train.py
+```
 
 ## Testing
+To generate Protected images set ```save_img_result=True``` inside the training script. Then use the [GUI.py](https://github.com/ymirsky/CT-GAN/blob/master/GUI.py) script provided by the authors using the protected generated images.
 
 ## Results
 Qualitative results on the reconstruction task compared with images as manipulation targets.
