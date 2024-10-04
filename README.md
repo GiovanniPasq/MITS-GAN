@@ -19,7 +19,7 @@ Please leave a star ⭐ and cite the following [paper](https://arxiv.org/pdf/240
 Choose one of the two installation options:
 ### Google Colab
 Quickstart here 👉 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/gist/GiovanniPasq/f93f96b8d90adb29c1a2d3aab91d9abe/mits-gan.ipynb)<br>
-
+Or load and run the ```MITS-GAN.ipynb``` on Google Colab following the instructions inside the notebook.
 ### Installation on your PC
 Install the required dependencies by running the following command in your terminal:
 ```
