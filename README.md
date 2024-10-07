@@ -1,6 +1,6 @@
 # MITS-GAN
-This is the implementation of our Computers in Biology and Medicine 2024 work 'MITS-GAN: Safeguarding Medical Imaging from Tampering with Generative Adversarial Networks'. This study introduces MITS-GAN, a novel approach to prevent tampering in medical images, with a specific focus on CT scans. The approach disrupts the output of the attacker's [CT-GAN](https://github.com/ymirsky/CT-GAN) architecture by introducing imperceptible but yet precise perturbations. The original paper can be found [here](https://arxiv.org/pdf/2401.09624.pdf). <br>
-Please leave a star ⭐ and cite the following [paper](https://arxiv.org/pdf/2401.09624.pdf) if you use this repository for your project.<br>
+This is the implementation of our Computers in Biology and Medicine 2024 work 'MITS-GAN: Safeguarding Medical Imaging from Tampering with Generative Adversarial Networks'. This study introduces MITS-GAN, a novel approach to prevent tampering in medical images, with a specific focus on CT scans. The approach disrupts the output of the attacker's [CT-GAN](https://github.com/ymirsky/CT-GAN) architecture by introducing imperceptible but yet precise perturbations. The original paper can be found [here](https://arxiv.org/abs/2401.09624). <br>
+Please leave a star ⭐ and cite the following [paper](https://arxiv.org/pdf/2401.09624) if you use this repository for your project.<br>
 ```
 @misc{pasqualino2024mitsgan,
       title={MITS-GAN: Safeguarding Medical Imaging from Tampering with Generative Adversarial Networks}, 
