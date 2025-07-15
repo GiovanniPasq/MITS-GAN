@@ -81,13 +81,31 @@ python3 MITS-GAN/train.py
 To generate Protected images set ```save_img_result=True``` inside the training script. Then use the [GUI.py](https://github.com/ymirsky/CT-GAN/blob/master/GUI.py) script provided by the authors using the protected generated images.
 
 ## Results
+### Qualitative Results
 Qualitative results on the reconstruction task compared with images as manipulation targets.
 <center><img src='qualitative_results.png' width=100%/></center>
 
-Metric results evaluated between the following pairs on the: real-MITS-GAN, real-TAFIM, real-MITS-GAN tampered and real-TAFIM tampered. Lower values are better for RMSE and LPIPS, higher for PSNR.
+Heatmap computed between the pairs real-MITS-GAN and real-TAFIM.
+<center><img src='qualitative_results_heatmap.png' width=100%/></center>
 
-| Metric        | Real (MITS-GAN) | Real ([TAFIM](https://github.com/shivangi-aneja/TAFIM)) | Tampered (MITS-GAN) | Tampered ([TAFIM](https://github.com/shivangi-aneja/TAFIM)) |
-|---------------|------------------|--------------|------------------------|---------------------|
-| RMSE          | 169.481          | 194.943      | 198.253                | 233.780             |
-| PSNR          | 27.949           | 21.702       | 21.237                 | 21.469              |
-| LPIPS         | 0.170            | 0.383        | 0.226                  | 0.391               |
+### Quantitative Results
+Metric results evaluated between the following pairs on the: real-MITS-GAN, real-TAFIM, real-MITS-GAN tampered and real-TAFIM tampered. Lower values are better for RMSE and LPIPS, higher for PSNR and SSIM.
+
+| **Metric**        | Real (MITS-GAN) | Real ([TAFIM](https://github.com/shivangi-aneja/TAFIM)) | Tampered (MITS-GAN) | Tampered ([TAFIM](https://github.com/shivangi-aneja/TAFIM)) |
+|-------------------|--------------|--------------|------------------------|---------------------|
+| **RMSE**          | 169.481      | 194.943      | 198.253                | 233.780             |
+| **PSNR**          | 27.949       | 21.702       | 21.237                 | 21.469              |
+| **LPIPS**         | 0.170        | 0.383        | 0.226                  | 0.391               |
+| **SSIM**          | 0.983        | 0.945        | 0.970                  | 0.981               |
+
+
+Metric results evaluated between the following pairs on the tampered square part of the images: real-MITS-GAN, real-TAFIM, real-MITS-GAN tampered and real-TAFIM tampered. Lower values are better for RMSE and LPIPS, higher for PSNR and SSIM.
+
+| **Metric** | **MITS-GAN** | **[TAFIM](https://github.com/shivangi-aneja/TAFIM)** | **Tampered (MITS-GAN)** | **Tampered ([TAFIM](https://github.com/shivangi-aneja/TAFIM))** |
+|------------|--------------|-----------|------------------|--------------|
+| **RMSE**   | 50.565       | 66.061    | 84.349           | 79.451       |
+| **PSNR**   | 26.682       | 18.854    | 11.289           | 18.511       |
+| **LPIPS**  | 0.372        | 0.3417    | 0.591            | 0.346        |
+| **SSIM**   | 0.992        | 0.972     | 0.740            | 0.866        |
+
+
